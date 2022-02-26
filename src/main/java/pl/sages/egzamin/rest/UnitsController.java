@@ -19,13 +19,14 @@ public class UnitsController {
 
     @GetMapping
     public List<AvailableUnit> getUnitsAvailableForResources(
-            @RequestParam int wood,
-            @RequestParam int food,
-            @RequestParam int stone,
-            @RequestParam int gold
+            @RequestParam(defaultValue = "0") int wood,
+            @RequestParam(defaultValue = "0") int food,
+            @RequestParam(defaultValue = "0") int stone,
+            @RequestParam(defaultValue = "0") int gold
     ) {
         return availableUnitsService.getAvailableUnitsWithResources(wood,food,stone,gold);
     }
+
 
 
 }
