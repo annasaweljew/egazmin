@@ -2,6 +2,8 @@ package pl.sages.egzamin.model;
 
 import lombok.*;
 
+import javax.persistence.Embedded;
+
 @ToString
 @Setter
 @Getter

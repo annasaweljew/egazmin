@@ -1,9 +1,14 @@
 package pl.sages.egzamin.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.Data;
+import lombok.*;
 
-@Data
+import javax.persistence.Embeddable;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Cost {
 
     @JsonProperty("Wood")
