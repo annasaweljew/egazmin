@@ -8,18 +8,13 @@ import pl.sages.egzamin.model.Cost;
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
-class UnitEntityMapperTest {
+class CostEntityMapperTest {
 
     @Autowired
     private CostEntityMapper costEntityMapper;
 
-    private static final Long ID = 1L;
-    private static final String NAME = "Name";
-    private static final int WOOD = 3;
     private static final int GOLD = 12;
-    private static final int STONE = 10;
     private static final int FOOD = 7;
-
 
     @Test
     void toCostEntity() {
@@ -32,15 +27,4 @@ class UnitEntityMapperTest {
         assertEquals(GOLD, costEntity.getGold());
     }
 
-    @Test
-    void toCost() {
-    }
-
-    @Test
-    void toUnitEntity() {
-    }
-
-    @Test
-    void toUnit() {
-    }
 }
