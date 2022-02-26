@@ -1,0 +1,2 @@
+GET http://localhost:8080/available-units?wood=25&food=0&stone=0&gold=45
+Accept: application/json
